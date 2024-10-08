@@ -117,10 +117,10 @@ nav a {
 }
 
 .hero p, .secondary-hero p {
-    font-size: 52px;
+    font-size: 3.25rem;
     font-weight: 600;
     color: var(--background-color);
-    width: 1128px;
+    max-width: 1128px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: capitalize;
 }
@@ -169,6 +169,7 @@ nav a {
 
 .project-wrapper {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     text-align: left;
     column-gap: 20px;
     max-width: 1128px;
@@ -267,6 +268,101 @@ ul li {
 .links-wrapper {
     display: flex;
     gap: 20px;
+}
+
+/* media queries */
+@media screen and (max-width: 1096px) {
+    h1 {
+        font-size: 1rem; /* changed to 16px */
+    }
+
+    .hero p, .secondary-hero p {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    
+    .paragraph-large {
+        font-size: 2rem; /* changed to 32px */
+        font-weight: medium;
+        margin-bottom: 32px;
+        max-width: 840px;
+    }
+    
+    .hero .wrapper p {
+        margin: 20px 0 32px 0;
+        line-height: 124%;
+    }
+    
+    p {
+        font-size: 1.125rem; /* changed to 18px */
+    }
+
+    .about-me .flex-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+
+    .about-me img {
+        max-width: 496px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    nav ul {
+        margin-right: 40px;
+    }
+
+    .footer-wrapper {
+        margin: 0 40px;
+    }
+}
+    
+
+@media screen and (max-width: 809px) {
+    nav ul {
+        margin-right: 20px;
+    }
+
+    .hero {
+        padding: 172px 20px 124px 20px;
+    }
+
+    .hero p {
+        font-size: 2rem;
+    }
+
+    .paragraph-large {
+        font-size: 1.75rem;
+    }
+
+    .projects {
+        padding: 132px 20px 38px 20px;
+        /* was 66 but then -28 now =38 */
+    }
+
+    .project-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about-me {
+        padding: 66px 20px 132px 20px;
+    }
+
+    .about-me .flex-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    p.paragraph-small {
+        margin-bottom: 28px;
+        /* messes up spacing by 20px */
+    }
+
+    .footer-wrapper {
+        margin: 0 20px;
+    }
 }
 
 /* contact page */
