@@ -324,6 +324,13 @@ ul li {
         margin-right: 20px;
     }
 
+    .footer-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        text-align: center;
+    }
+
     .hero {
         padding: 172px 20px 124px 20px;
     }
@@ -337,8 +344,8 @@ ul li {
     }
 
     .projects {
-        padding: 132px 20px 38px 20px;
-        /* was 66 but then -28 now =38 */
+        padding: 96px 20px 20px 20px;
+        /* was 48 but then -28 now =20 */
     }
 
     .project-wrapper {
@@ -347,7 +354,7 @@ ul li {
     }
 
     .about-me {
-        padding: 66px 20px 132px 20px;
+        padding: 48px 20px 48px 20px;
     }
 
     .about-me .flex-wrapper {
