@@ -362,6 +362,14 @@ ul li {
         grid-template-columns: 1fr;
     }
 
+    .about-me .text-wrapper {
+        max-width: unset;
+    }
+
+    .about-me img {
+        max-width: unset;
+    }
+
     p.paragraph-small {
         margin-bottom: 28px;
         /* messes up spacing by 20px */
